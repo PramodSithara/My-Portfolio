@@ -11,6 +11,9 @@ import projImg5 from "../assets/img/projects/chatbot.png";
 import projImg6 from "../assets/img/projects/music.png";
 import projImg7 from "../assets/img/projects/fileshare.png";
 import projImg8 from "../assets/img/projects/compiler.png";
+import pythonImg from "../assets/img/projects/python.png"
+import uFix from "../assets/img/projects/ufix.png"
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ProjectCard } from "./ProjectCard";
 
@@ -56,6 +59,57 @@ export const Projects = () => {
       description: "Online Code Compiler for C, Python, and Java",
       imgUrl: projImg8,
     },
+    {
+      title: "Python URL Shortner",
+      description: "Short URL Using Python",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Python Keylogger",
+      description: "Ethical Hacking - Python Keylogger (Keylogger update Receiver Through email about user's Key Event)",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Python AI Assistant",
+      description: "Personal AI Assistant",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Python PDF to Audio Converter",
+      description: "Make Audio-Book using PDF file",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Python Geolocation Distance Finder",
+      description: "Find Distance Between Two Geolocation places",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Python Virtual Mouse",
+      description: "Virtual Mouse Can Control Using EYE",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Python File Organizer",
+      description: "Organize File According Extensions",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "Hardware Management System",
+      description: "C# Hardware Management System",
+      imgUrl: pythonImg,
+    },
+    {
+      title: "U-Fix Web Application",
+      description: "Fix All Vehicle By Your Self. Identify Faults , Search Fault Using Fault Identification and Easily Find Solution",
+      imgUrl: uFix,
+    },
+    {
+      title: "Parking Space Recognition",
+      description: "Identify Available Parking Spots using Python cvzone",
+      imgUrl: pythonImg,
+    },
+    
   ];
 
   return (
@@ -94,7 +148,7 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.slice(6).map((project, index) => (
+                          {projects.slice(6, 12).map((project, index) => (
                             <Col key={index} xs={12} md={4}>
                               <div className="project-card-container">
                                 <ProjectCard {...project} />
@@ -104,8 +158,15 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                        </p>
+                      <Row>
+                          {projects.slice(12, 18).map((project, index) => (
+                            <Col key={index} xs={12} md={4}>
+                              <div className="project-card-container">
+                                <ProjectCard {...project} />
+                              </div>
+                            </Col>
+                          ))}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

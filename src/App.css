@@ -67,6 +67,10 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+.nav-title{
+  font-size: 20px;
+}
+
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
@@ -89,6 +93,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  padding-top: 0;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -262,7 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
+  min-width: 96%;
 }
 .banner button {
   color: #fff;
@@ -282,9 +287,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
+
 .banner img {
   animation: updown 3s linear infinite;
+  height: 100%;
+  width: 100%;
 }
+
+.banner-image{
+  width: 40%;
+}
+
+.animate__animated {
+  width: 72%;
+  margin-top: 30px;
+  padding-left: 10px;
+
+}
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -616,4 +636,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-

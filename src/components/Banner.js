@@ -70,16 +70,16 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Pramod`} <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer.", "Software Engineer." ]'><span className="wrap">{text}</span></span></h1>
-                  <p>My Name is Pramod, I’m Final year Student in University of Vavuniya. also I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
-                  <button onClick={downloadLocalPDF}>Download CV <ArrowRightCircle size={25} /></button>
+                <p>My Name is Pramod, I’m Final year Student in University of Vavuniya. also I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+                <button onClick={downloadLocalPDF}>Download CV <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={newheaderImg} alt="Header Img"/>
+                <div className="animate__animated">
+                  <img className="banner-image" src={newheaderImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>
